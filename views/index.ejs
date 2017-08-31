@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="qc:admins" content="4562636714562571563145" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>便利贴</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="////at.alicdn.com/t/font_400593_ubr2il4dz2wyu8fr.css">
+</head>
+
+<body>
+    <div id="header" class="clearfix">
+        <a class="add-note" title="添加笔记" href="#"><span class="fa fa-plus"></span>添加笔记</a>
+        <ul class="user-area">
+            <% if (isLogin){ %>
+                <li><img src="<%= user.avatar %>" alt=""></li>
+                <li><span title="<%= user.username %>"><%= user.username %></span></li>
+                <li><span class="line"> | </span> </li>
+                <li><a class="logout" href="/auth/logout">注销</a></li>
+                <%} else { %>
+                    <li><a class="login" title="GitHub登录" href="/auth/github"> GitHub登陆</a>
+                    </li>
+                    <% } %>
+        </ul>
+
+    </div>
+    <div id="content">
+
+    </div>
+
+    <div class="instruction">
+        <span>用法</span><br>
+        <span>使用github账号登陆</span><br>
+        <span>点击添加新便签</span><br>
+        <span>便签可移动</span><br>
+
+    </div>
+    <script src="/js/index.js"></script>
+    <!--     <div class="twinkling"></div> -->
+</body>
+
+</html>

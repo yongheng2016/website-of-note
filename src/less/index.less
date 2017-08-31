@@ -1,0 +1,109 @@
+html,body{
+  margin: 0;
+  height: 100%;
+}
+body {
+  background: url(http://wx3.sinaimg.cn/mw690/b9d0abb5ly1fj1mccxcmfj20860b4t9g.jpg);
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  font: 14px/1.4 'Arial';
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+#header {
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  background: rgba(74, 16, 16, 0.98);
+  box-shadow: 0 6px 20px 3px rgba(0, 0, 0, 0.6);
+  a {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  
+  .user-area {
+    padding-right: 16px;
+    float: right;
+
+    li {
+      float: left;
+      margin-left: 5px;
+
+      span {
+        color: #fff;
+        display: block;
+        line-height: 30px;
+      }
+
+      a {
+      line-height: 30px;
+      }
+
+    }
+
+    img {
+      height: 18px;
+      margin-top: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  .setting{
+    float: right;
+    margin-left: 9px;
+    display: none;
+  }
+  .add-note{
+    float: left;
+    margin-left: 16px;
+  }
+  .login{
+    float: right;
+    margin-left: 30px;
+  }
+
+
+}
+
+
+
+#content{
+  position: relative;
+  z-index: 1;
+  height: -webkit-calc(100% - 30px);
+  height: calc(100% - 30px);
+  margin-top: 20px;
+}
+
+.instruction {
+  border: 1px solid rgb(109, 52, 52);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(78, 47, 29);
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+  font-family: Cambria, Georgia, serif;
+  font-style: italic;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  line-height: 24px;
+  cursor: default;
+  span {
+    line-height: 30px;
+  }
+}
+
